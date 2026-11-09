@@ -26,7 +26,6 @@ padding:0px 10px;
 }
 ul {
 list-style-type: circle;
-// list-style-type:none;  
 }
 a.aa {
 font-size:1em;
@@ -34,6 +33,49 @@ text-decoration:none;
 }
 a.aa:hover {
 text-decoration: underline;
+}
+.fa {
+  padding: 10px;                
+  font-size: 15px;           
+  width: 35px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background:  #607d8b;
+  color: white;
+}
+
+.fa-instagram {
+  background:  #607d8b;
+  color: white;
+}
+
+.fa-envelope {
+  background:  #607d8b;
+  color: white;
+}
+
+#Modal22 {
+font-family:sans-serif;
+background-color: #efefef;
+border: 1px solid #bbb;
+padding: 8px 15px;
+border-radius: 12px;
+box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+#close22 {
+float:right; 
+border: none; 
+padding:0px 10px;
+border-radius: 15px;
 }
 </style>
 <body class="w3-light-grey">  
@@ -90,9 +132,30 @@ text-decoration: underline;
 <a href="#" class="w3-bar-item w3-button w3-border-bottom w3-large" title="Виставки" onclick="Modal.showModal()">Мої виставки</a> 
   
  <div class="w3-bar-item w3-button  w3-border-bottom">
+ <!--
 <a href="cont.html" class="w3-large" title="Перегляд контактів" onclick="window.open(this.href, '', 'scrollbars=1,top=0,left=0,height='+Math.min(400, screen.availHeight)+',width='+Math.min(800, screen.availWidth)); return false;">
 Контакти для продажу
 </a>
+   -->
+<dialog id="Modal22">
+ <button id="close22" title="Закрити" onclick="Modal22.close()">x</button>
+<h3>Контакти</h3>
+<div class="w3-bar-block" >
+  <div class="w3-bar-item w3-button w3-hover-none"> 
+<a href="mailto:nazarenko.valia@gmail.com" title="Gmail" class="w3-large"><i class="fa fa-envelope"></i> Gmail.com</a>
+  </div>
+  <div class="w3-bar-item w3-button w3-hover-none">
+<a href="https://www.facebook.com/valentina.nazarenko.71536" title="Facebook" rel="noopener noreferrer" target="_blank" class="w3-large"><i class="fa fa-facebook"></i> Facebook</a>
+  </div>
+  <div class="w3-bar-item w3-button w3-hover-none">
+<a href="https://instagram.com" title="Instagram" rel="noopener noreferrer" target="_blank" class="w3-large"><i class="fa fa-instagram"></i> @acorn4196</a>
+</div>
+</div>   
+</dialog>
+<a href="#" class="w3-large" title="Перегляд контактів" onclick="Modal22.showModal()">
+Контакти для продажу
+</a>
+   
 </div>
 </div>
 </div>   
