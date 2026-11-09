@@ -9,6 +9,32 @@
 <meta property="og:image" content="https://Nazar63844.github.io/pfl/pr1.webp">
 <style>
 a {text-decoration: none;}
+#Modal {
+font-family:sans-serif;
+background-color: #efefef;
+border: 1px solid #bbb;
+padding: 8px 15px;
+border-radius: 12px;
+box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+#close {
+font-size: 20px;
+float:right; 
+border: none;
+border-radius: 15px; 
+padding:0px 10px;
+}
+ul {
+list-style-type: circle;
+// list-style-type:none;  
+}
+a.aa {
+font-size:1em;
+text-decoration:none;
+}
+a.aa:hover {
+text-decoration: underline;
+}
 </style>
 <body class="w3-light-grey">  
 <div class="w3-content w3-row-padding w3-margin-top">
@@ -27,9 +53,46 @@ a {text-decoration: none;}
   <a href="slides.html" class="w3-bar-item w3-button w3-border-bottom w3-large" title="Перегляд контактів" onclick="window.open(this.href, '', 'scrollbars=1,top=0,left=0,height='+Math.min(400, screen.availHeight)+',width='+Math.min(800, screen.availWidth)); return false;">
 Продаж картин
 </a>
+  <!--
   <a href="show.html" class="w3-bar-item w3-button w3-border-bottom w3-large" title="Виставки" onclick="window.open(this.href, '', 'scrollbars=1,top=0,left=0,height='+Math.min(400, screen.availHeight)+',width='+Math.min(800, screen.availWidth)); return false;">
 Мої виставки
-</a>  
+</a> 
+  -->
+
+<dialog id="Modal">
+<h3>Мої виставки <button id="close" title="Закрити" onclick="Modal.close()">x</button></h3>
+<ul>
+<li>
+<a href="https://1kr.ua/ua/news-114596.html?rssRef=1792866060"  onclick="window.open(this.href, '', 'scrollbars=1,top=0,left=0,height='+Math.min(400, screen.availHeight)+',width='+Math.min(800, screen.availWidth)); return false;" title="Вісока кімната" class="aa w3-large">Вісока кімната</a>
+</li>
+<li>
+<a href="https://www.instagram.com/reel/C5KsnE9iNqK/?dlrf=MXdvdGZsdHBidXNtMQ%3D%3D"  onclick="window.open(this.href, '', 'scrollbars=1,top=0,left=0,height='+Math.min(400, screen.availHeight)+',width='+Math.min(800, screen.availWidth)); return false;" title="Вона Гарт" class="aa w3-large">Вона Гарт</a>
+</li>
+<li>
+ <a href="https://www.facebook.com/reel/2221144065321517" onclick="window.open(this.href, '', 'scrollbars=1,top=0,left=0,height='+Math.min(400, screen.availHeight)+',width='+Math.min(800, screen.availWidth)); return false;" title="музей Г.Синиці" class="aa w3-large">Музей Г.Синиці</a>
+</li>
+<li>
+<a href="https://www.facebook.com/reel/2221144065321517"  onclick="window.open(this.href, '', 'scrollbars=1,top=0,left=0,height='+Math.min(400, screen.availHeight)+',width='+Math.min(800, screen.availWidth)); return false;" title="музей Г.Синиці" class="aa w3-large">Музей Г.Синиці</a> 
+</li>
+<li>
+<a href="https://www.facebook.com/reel/1801276094236538"  onclick="window.open(this.href, '', 'scrollbars=1,top=0,left=0,height='+Math.min(400, screen.availHeight)+',width='+Math.min(800, screen.availWidth)); return false;" title="Висока кімната" class="aa w3-large">Висока кімната</a>
+</li>
+<li>
+<a href="https://www.instagram.com/reel/DUihgwWjI75/?rpxt=MXRjc2hteG5pYmgzOA%3D%3D" onclick="window.open(this.href, '', 'scrollbars=1,top=0,left=0,height='+Math.min(400, screen.availHeight)+',width='+Math.min(800, screen.availWidth)); return false;" title="Музей Корсаків" class="aa w3-large">Музей Корсаків</a>
+</li>
+<li>
+<a href="https://www.instagram.com/reel/DYxQinnskIh/?mdxt=cThhaWR3aG1zeG11" onclick="window.open(this.href, '', 'scrollbars=1,top=0,left=0,height='+Math.min(400, screen.availHeight)+',width='+Math.min(800, screen.availWidth)); return false;" title="Музей Корсаків" class="aa w3-large">Музей Корсаків</a>
+</li>
+<li>
+<a href="https://www.youtube.com/watch?v=ZPF6gH18_TQ"  onclick="window.open(this.href, '', 'scrollbars=1,top=0,left=0,height='+Math.min(400, screen.availHeight)+',width='+Math.min(800, screen.availWidth)); return false;" title="Гарт" class="aa w3-large">ГАРТ - реабілітаційний центр</a>
+</li>
+<li>
+<a href="https://www.instagram.com/p/DOuEmtDDJzp/?igsh=ZHhzMGozZG8zbnpj&fbclid=IwY2xjawVHKCxleHRuA2FlbQIxMQBwZG9mAmJyaWQRMUlwekQzc2RHTXU3YU5DYndzcnRjBmFwcF9pZA8xMjQwMjQ1NzQyODc0MTQAAR6m5MWt3q8Ux7G5sCTDw5XSjgM-Ko5sIUUVSJgWftDZKxoZvozm3zhP9ljJgA_aem_3WX2LdQ3uYtrSwRZJDvqBQ"  onclick="window.open(this.href, '', 'scrollbars=1,top=0,left=0,height='+Math.min(400, screen.availHeight)+',width='+Math.min(800, screen.availWidth)); return false;" title="Покоління війни" class="aa w3-large">Покоління війни - Барселона</a>
+</li>
+</ul>   
+</dialog>
+<a href="#" class="w3-bar-item w3-button w3-border-bottom w3-large" title="Виставки" onclick="Modal.showModal()">Мої виставки</a> 
+  
  <div class="w3-bar-item w3-button  w3-border-bottom">
 <a href="cont.html" class="w3-large" title="Перегляд контактів" onclick="window.open(this.href, '', 'scrollbars=1,top=0,left=0,height='+Math.min(400, screen.availHeight)+',width='+Math.min(800, screen.availWidth)); return false;">
 Контакти для продажу
