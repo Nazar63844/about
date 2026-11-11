@@ -8,7 +8,11 @@
 <meta property="og:title" content="ValyaAcorn | Живопис">
 <meta property="og:description" content="Портфолио художника с проектами и контактами">
 <meta property="og:image" content="https://Nazar63844.github.io/pfl/pr1.webp">
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
 <style type="text/css">
+html {
+  scroll-behavior: smooth;             
+}
 body { margin-top: 55px}
 .navbar {
   position: fixed; 
@@ -21,12 +25,21 @@ body { margin-top: 55px}
 dialog {
 	border: none;
 }
+#peekaboo
+ { 
+ position:fixed; 
+ bottom:50px; 
+ right:-352px; 
+ font-size:1em;
+ width:19%; 
+ height:35px;
+ } 	
 </style>
 <body class="w3-light-grey">
-<div class="w3-container w3-blue-grey navbar">  <!--dark-grey-->
-<h3>Продаж картин <a href="index.html" class="w3-right" title="На головну"><i class="fa-solid fa-house"></i></a></h3>
+<div class="w3-container w3-blue-grey navbar">  
+<h3><i class='far fa-clone'></i> Продаж картин <a href="index.html" class="w3-right" title="На головну"><i class="fa-solid fa-house"></i></a></h3>
 </div>
-<div class="w3-content">
+<div class="w3-content"  id="navone">
 <div class="w3-row w3-margin">
 <div class="w3-third">
   <img src="3.jpeg" style="width:100%;min-height:200px">
@@ -247,5 +260,28 @@ dialog {
     <p class="w3-medium">
     	<tt>&copy; 2026 Валентина Назаренко from VovaN&Web</tt>
     </p>
+<div id="peekaboo" title="Вгору"><a href="#navone" class="w3-btn w3-blue"><i class='fas'>&#xf077;</i></a></div>
 </footer>
+<script> 
+ function yScrollHandler()
+ { 
+ var win = document.getElementById("peekaboo"); 
+ if((window.pageYOffset + window.innerHeight) >= document.body.offsetHeight)
+ { 
+ win.style.webkitTransition = "right 0.7s ease-in-out 0s"; 
+ win.style.mozTransition = "right 0.7s ease-in-out 0s";
+ win.style.msTransition = "right 0.7s ease-in-out 0s";
+ win.style.oTransition = "right 0.7s ease-in-out 0s";  
+ win.style.transition = "right 0.7s ease-in-out 0s"; 
+ win.style.right = "0px"; 
+ } 
+ else 
+ { 
+ win.style.transition = "right 0.7s ease-in-out 0s"; 
+ win.style.right = "-452px"; 
+ } 
+ } 
+ window.onscroll = yScrollHandler; 
+ </script>
 </body></html>
+
